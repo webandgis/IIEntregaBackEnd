@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Productos e-commerce</title>
+</head>
+
+<body>
+    <h1>Lista de Productos</h1>
+    <ul>
+        <div id="product-container">
+            {{#each productList}}
+            <li>{{this.name}}, {{this.category}}, {{this.stock}} <button type="button">Add To Cart</button></li>
+            <p><strong>{{this.price}}</strong></p>
+            <img src="{{this.image}}" width="180"></img>
+            {{/each}}
+        </div>
+    </ul>
+
+</body>
+
+</html>
